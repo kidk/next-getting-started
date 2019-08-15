@@ -1,0 +1,29 @@
+{
+  "name": "next-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keethu24/next-getting-started.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keethu24/next-getting-started/issues"
+  },
+  "homepage": "https://github.com/keethu24/next-getting-started#readme",
+  "dependencies": {
+    "next": "^9.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.1",
+    "typescript": "^3.5.3"
+  }
+}
