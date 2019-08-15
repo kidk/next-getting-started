@@ -1,6 +1,5 @@
-// next.config.js
+const publicRuntimeConfig = require("./config/publicRuntimeConfig");
+
 module.exports = {
-    publicRuntimeConfig: {
-      hello: 'world'
-    }
-  }
+  publicRuntimeConfig
+};

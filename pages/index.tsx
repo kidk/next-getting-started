@@ -1,11 +1,9 @@
 import * as React from 'react';
-import getConfig from 'next/config';
-
-const { publicRuntimeConfig } = getConfig();
+import { API_URL } from '../src/api';
 
 class IndexPage extends React.Component {
     render() {
-        return <span>hello {publicRuntimeConfig.hello}</span>
+        return <span>hello {API_URL}</span>
     }
 }
 

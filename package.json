@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/keethu24/next-getting-started#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "next": "^9.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
