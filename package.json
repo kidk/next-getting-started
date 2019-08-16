@@ -18,7 +18,10 @@
   "homepage": "https://github.com/keethu24/next-getting-started#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "i18next": "^17.0.11",
+    "i18next-express-middleware": "^1.8.0",
     "next": "^9.0.3",
+    "next-i18next": "^1.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
