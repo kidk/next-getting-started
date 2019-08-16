@@ -1,16 +1,24 @@
-import * as React from 'react';
-import { API_URL } from '../src/api';
+import * as React from "react";
+import { API_URL } from "../src/api";
+import { withTranslation } from "../config/nextI18n";
+import { WithTranslation } from "react-i18next";
 
-class IndexPage extends React.Component {
-    static getInitialProps() {
-        return {
-            namespacesRequired: ['common']
-        }
-    }
+interface Props extends WithTranslation{
 
-    render() {
-        return <span>hello {API_URL}</span>
-    }
 }
 
-export default IndexPage;
+
+class IndexPage extends React.Component<Props> {
+  static getInitialProps() {
+    return {
+      namespacesRequired: ["common"]
+    };
+  }
+
+  render() {
+    const { t } = this.props;
+    return <span>{t('greeting')} {API_URL}</span>;
+  }
+}
+
+export default withTranslation("common")(IndexPage);

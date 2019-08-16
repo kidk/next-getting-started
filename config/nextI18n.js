@@ -4,7 +4,8 @@ const NextI18Next = require('next-i18next').default;
 const nextI18n = new NextI18Next({
   // plugin config: https://github.com/isaachinman/next-i18next#options
   defaultLanguage: 'de',
-  otherLanguages: ['de', 'fr', 'it'],
+  lng: 'de',
+  otherLanguages: ['de', 'fr'],
 
   // official i18next config: https://www.i18next.com/overview/configuration-options
   react: {
