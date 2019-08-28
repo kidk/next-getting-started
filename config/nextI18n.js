@@ -6,7 +6,7 @@ const nextI18n = new NextI18Next({
   defaultLanguage: "de",
   lng: "de",
   // fallbackLng: "de",
-  otherLanguages: ["de", "fr"],
+  otherLanguages: ["fr"],
   // preload: ["de", "fr"],
 
   // official i18next config: https://www.i18next.com/overview/configuration-options
