@@ -1,35 +1,24 @@
 // @ts-check
-const NextI18Next = require('next-i18next').default;
+const NextI18Next = require("next-i18next").default;
 
 const nextI18n = new NextI18Next({
   // plugin config: https://github.com/isaachinman/next-i18next#options
-  defaultLanguage: 'de',
-  lng: 'de',
-  otherLanguages: ['de', 'fr'],
+  defaultLanguage: "de",
+  lng: "de",
+  // fallbackLng: "de",
+  otherLanguages: ["de", "fr"],
+  // preload: ["de", "fr"],
 
   // official i18next config: https://www.i18next.com/overview/configuration-options
   react: {
     wait: true
   },
-  defaultNS: undefined,
-  ns: 'common',
+  defaultNS: "common",
+  ns: ["common"],
   detection: {
     lookupFromPathIndex: 0,
-    load: 'languageOnly',
-    order: ['path', 'navigator', 'cookie', 'header']
-  },
-  // Add resources manually until the translation service is available
-  resources: {
-    fr: {
-      common: {
-        greeting: 'Bonjour le monde'
-      }
-    },
-    de: {
-      common: {
-        greeting: 'hallo welt'
-      }
-    }
+    load: "languageOnly",
+    order: ["path", "navigator", "cookie", "header"]
   }
 });
 

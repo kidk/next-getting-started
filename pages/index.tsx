@@ -11,14 +11,16 @@ interface Props extends WithTranslation{
 class IndexPage extends React.Component<Props> {
   static getInitialProps() {
     return {
-      namespacesRequired: ["common"]
+      namespacesRequired: ["home", "common"]
     };
   }
 
   render() {
     const { t } = this.props;
-    return <span>{t('greeting')} {API_URL}</span>;
+    return <div>
+      {t('greeting')} {API_URL} {t('hello')}
+    </div>;
   }
 }
 
-export default withTranslation("common")(IndexPage);
+export default withTranslation(["common", "home"])(IndexPage);
