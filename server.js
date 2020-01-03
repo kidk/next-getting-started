@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require("express");
 const next = require("next");
 const getConfig = require("next/config");

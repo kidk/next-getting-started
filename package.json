@@ -20,11 +20,13 @@
     "express": "^4.17.1",
     "next": "^9.0.3",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "newrelic": "6.2.0"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.1",
+    "@types/newrelic": "5.11.2",
     "typescript": "^3.5.3"
   }
 }
